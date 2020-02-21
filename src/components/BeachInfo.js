@@ -6,16 +6,15 @@ const BeachInfo = props => {
     if (props.beaches === undefined) {
         return <Loader />
     } else {
-        // console.log(props.beaches.attributes.Imagen)
         return (
-            <div>
+            <div className="wrapper">
                 <Link className="go__back" to="/">
                     {"< Volver a Inicio"}
                 </Link>
-                <div>
+                <div className="card__detail--container">
+                    <img className="card__detail--img" src={props.beaches.attributes.Imagen} alt={props.beaches.attributes.Nombre} />
                     <ul>
-                        <img src={props.beaches.attributes.Imagen} alt={props.beaches.attributes.Nombre} />
-                        <h2>Playa: {props.beaches.attributes.Nombre}</h2>
+                        <h2>{props.beaches.attributes.Nombre}</h2>
                         <li>Comunidad: {props.beaches.attributes.Comunidad_}</li>
                         <li>Provincia: {props.beaches.attributes.Provincia}</li>
                         <li>Isla: {props.beaches.attributes.Isla}</li>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            <h1>PLAYAS DE ESPAÑA</h1>
+        <div className="wrapper">
+            <h1 className="title">PLAYAS DE ESPAÑA</h1>
         </div>
     )
 }

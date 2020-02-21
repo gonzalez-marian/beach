@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/App.css';
+import '../styles/App.scss';
 import beach from '../services/api.json';
 import BeachList from './BeachList';
 import Header from './Header';

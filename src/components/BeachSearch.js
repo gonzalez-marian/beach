@@ -5,7 +5,7 @@ const BeachSearch = props => {
         props.handleChange(evt.target.value)
     }
     return (
-        <div>
+        <div className="wrapper">
             <form>
                 <label>Buscar Playa: </label>
                 <input type="text" onChange={handleChange} name="beach" value={props.value} placeholder="Ej: La Juana" />

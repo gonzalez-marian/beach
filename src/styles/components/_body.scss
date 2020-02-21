@@ -1,0 +1,11 @@
+.card__detail--img{
+    width: 200px;
+    height: 200px;
+}
+
+@media all and (min-width: 768px){
+    .card__detail--img{
+    width: 400px;
+    height: 400px;
+    }
+}

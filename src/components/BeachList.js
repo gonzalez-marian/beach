@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 
 const BeachList = props => {
     return (
-        < div >
-            <img src="../images/imagen_fondo.jpg" alt="playa" />
+        < div className="wrapper">
             <ul>
                 {props.allBeaches
                     .filter(beach => beach.attributes.Nombre.toLowerCase().includes(props.value.toLowerCase()))
