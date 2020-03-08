@@ -1,24 +1,5 @@
 *{
-    
     text-align: center;
-    box-sizing: border-box;
+    font-family: 'Original Surfer', cursive;
 }
 
-.wrapper{
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 25px;
-}
-
-@media all and (min-width: 768px){
-    .wrapper{
-        margin: 0 48px;
-    }
-}
-
-@media all and (min-width: 1200px){
-    .wrapper{
-        margin: 0 100px;
-    }
-}

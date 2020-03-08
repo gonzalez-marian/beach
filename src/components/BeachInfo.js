@@ -14,7 +14,7 @@ const BeachInfo = props => {
                 <div className="card__detail--container">
                     <img className="card__detail--img" src={props.beaches.attributes.Imagen} alt={props.beaches.attributes.Nombre} />
                     <ul>
-                        <h2>{props.beaches.attributes.Nombre}</h2>
+                        <h2 className="card__title">{props.beaches.attributes.Nombre}</h2>
                         <li>Comunidad: {props.beaches.attributes.Comunidad_}</li>
                         <li>Provincia: {props.beaches.attributes.Provincia}</li>
                         <li>Isla: {props.beaches.attributes.Isla}</li>

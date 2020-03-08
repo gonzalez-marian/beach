@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const BeachList = props => {
     return (
-        < div className="wrapper">
-            <ul>
+        < div className="wrapper__list">
+            <ul className="list">
                 {props.allBeaches
                     .filter(beach => beach.attributes.Nombre.toLowerCase().includes(props.value.toLowerCase()))
-                    .map(beach => <li key={props.beachCod}>
+                    .map(beach => <li className="list__card" key={props.beachCod}>
                         <Link to={`/beach/${beach.attributes.OBJECTID}`}>
                             <BeachCard
                                 beachName={beach.attributes.Nombre}

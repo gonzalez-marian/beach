@@ -5,10 +5,11 @@ const BeachSearch = props => {
         props.handleChange(evt.target.value)
     }
     return (
-        <div className="wrapper">
-            <form>
-                <label>Buscar Playa: </label>
-                <input type="text" onChange={handleChange} name="beach" value={props.value} placeholder="Ej: La Juana" />
+        <div className="main__wrapper">
+            <span>Buscar Playa: </span>
+            <form className="nice-input-wrapper">
+                <input className="nice-input" type="text" onChange={handleChange} name="beach" value={props.value} placeholder="Ej: La Juana" />
+                <span class="focus-border"><i></i></span>
             </form>
         </div>
     )
