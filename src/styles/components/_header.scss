@@ -1,21 +1,31 @@
 .header{
     margin: 0;
+    width: 100vw;
 }
 
 .header__title{
-    background: linear-gradient(300deg, #1feaf1, #ffffff, #28ebca);
-    background-size: 400% 300%;
-    animation: BgGradient 5s ease infinite;
     color: rgb(4, 87, 83);
     opacity: 0.5;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 35px;
     padding: 0.5em;
+    animation-duration: 2s;
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
-@keyframes BgGradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+@keyframes intro {
+    from {
+      transform: scale(10) rotate(-150deg);
+      opacity: 0;
+      color: white;
+    }
+  
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
 }
+  
