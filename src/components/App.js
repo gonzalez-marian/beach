@@ -31,14 +31,23 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Switch>
-          <Route path="/" exact>
-            <BeachSearch handleChange={this.handleChange} />
-            <BeachList allBeaches={this.state.beach} value={this.state.value} />
-          </Route>
-          <Route path="/beach/:id" render={this.renderBeaches} />
-        </Switch>
+        <div class="sky"></div>
+        <div class="sand"></div>
+        <div class="wet-sand"></div>
+        <div class="sea">
+          <div class="seafoam"></div>
+        </div>
+        <div class="sand-front"></div>
+        <wrapper className="App__wrapper">
+          <Header />
+          <Switch>
+            <Route path="/" exact>
+              <BeachSearch handleChange={this.handleChange} />
+              <BeachList allBeaches={this.state.beach} value={this.state.value} />
+            </Route>
+            <Route path="/beach/:id" render={this.renderBeaches} />
+          </Switch>
+        </wrapper>
       </div>
     );
   }
