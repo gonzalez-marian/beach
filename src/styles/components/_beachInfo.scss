@@ -1,0 +1,40 @@
+.card__detail--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 25px;
+    .card__detail--img{
+        align-self: center;
+    }
+}
+
+.card__subtitle{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(23, 95, 92);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+@media all and (min-width: 768px){
+    .card__detail--container{
+        margin: 0 48px;
+    }
+        .card__detail--img{
+            width: 375px;
+            align-self: center;
+        }
+            .card__detail--info{
+            width: 40%;
+            align-self: center;
+            }
+}
+
+
+@media all and (min-width: 1000px){
+    .card__detail--container{
+        padding-top: 70px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

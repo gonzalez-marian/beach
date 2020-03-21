@@ -38,16 +38,15 @@ class App extends React.Component {
           <div class="seafoam"></div>
         </div>
         <div class="sand-front"></div>
-        <wrapper className="App__wrapper">
-          <Header />
-          <Switch>
-            <Route path="/" exact>
-              <BeachSearch handleChange={this.handleChange} />
-              <BeachList allBeaches={this.state.beach} value={this.state.value} />
-            </Route>
-            <Route path="/beach/:id" render={this.renderBeaches} />
-          </Switch>
-        </wrapper>
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <BeachSearch handleChange={this.handleChange} />
+            <BeachList allBeaches={this.state.beach} value={this.state.value} />
+          </Route>
+          <Route path="/beach/:id" render={this.renderBeaches} />
+        </Switch>
+
       </div>
     );
   }
