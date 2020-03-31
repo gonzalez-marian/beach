@@ -1,14 +1,14 @@
 /* vendors*/
-@import 'vendors/normalize';
+@import "vendors/normalize";
 
 /* layout */
-@import 'layout/base';
+@import "layout/base";
+@import "layout/header.scss";
+@import "layout/body.scss";
+@import "layout/beachSearch.scss";
+@import "layout/beachList.scss";
+@import "layout/beachCard.scss";
+@import "layout/beachInfo.scss";
 
 /* components*/
-@import 'components/header.scss';
-@import 'components/loader.scss';
-@import 'components/body.scss';
-@import 'components/beachSearch.scss';
-@import 'components/beachList.scss';
-@import 'components/beachCard.scss';
-@import 'components/beachInfo.scss';
+@import "components/loader.scss";
